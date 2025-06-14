@@ -1,0 +1,64 @@
+.spotlight {
+    height: 75vh;
+    min-height: 600px;
+    /* display: flex; */
+    /* align-items: center; */
+    background: #141414;
+    color: #fff;
+    background-size: cover;
+    position: relative;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.details {
+    margin-top: 300px
+}
+h1.title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+p.overview {
+    font-size: 20px;
+    max-width: 40%;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* adding ellipsis after third line */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn {
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn-play {
+    background-color: #fff;
+    margin-right: 15px;
+    color: #000;
+}
+.btn-info {
+    background-color: #777;
+}
+.btn-anchor-play {
+    text-decoration: none;
+    color: #000;
+    margin-left: 15px;
+}
+.btn-anchor-info {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+.bottom-fade {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+}

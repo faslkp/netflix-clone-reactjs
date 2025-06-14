@@ -1,0 +1,55 @@
+.tiles-row {
+    background-color: #141414;
+    padding: 15px 0;
+    z-index: 1000;
+    position: relative;
+}
+.row-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.tile-head {
+    font-size: 28px;
+    color: #fff;
+}
+.row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.row::-webkit-scrollbar {
+    display: none;
+}
+.tile {
+    margin-right: 10px;
+    position: relative;
+}
+.tile:hover {
+    transform: scale(1.5);
+    z-index: 2000;
+}
+.tile:first-child:hover {
+    transform-origin: left bottom;
+}
+.tile img {
+    width: 100%;
+    display: block;
+}
+.movie-details {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    color: #fff;
+    z-index: 2500;
+    display: none;
+}
+.tile:hover .movie-details {
+    display: block;
+    z-index: 3000;
+}
+.movie-title {
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
